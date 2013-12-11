@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<h2>{{ page.title }}</h2>
+<p class="meta">{{ page.course }} &middot; {{ page.date }}</p>
+
+{% if page.images %}
+  <div class="figures">
+  {% for img in page.images %}
+    {% capture img_url %}{{site.baseurl }}assets/img/{{ img['filename']}}{% endcapture %}
+    <figure>
+      <a rel="figures" href="{{ img_url }}" title="{{ img['caption'] }}">
+        <img alt="{{ img['title'] }}" src="{{ img_url }}">
+      </a>
+      <figcaption>{{ img['caption'] | smart }}</figcaption>
+    </figure>
+  {% endfor %}
+  </div>
+{% endif %}
+
+{{ content }}
+
+{% if page.papers %}
+  <h3>Papers</h3>
+  <ul>
+  {% for paper in page.papers%}
+    <li>
+      <a href="{{ site.baseurl }}assets/papers/{{ paper['filename'] }}">
+        {{ paper['title'] }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+{% endif %}
+
+{% if page.code%}
+  <h3>Code</h3>
+  <p><a href="{{ page.code }}">View source code</a></p>
+{% endif %}
