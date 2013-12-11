@@ -1,7 +1,18 @@
-# Visualization of Dijkstra's algorithm
-Networks - Spring 2013
+---
+layout: project
+title:  Visualization of Dijkstra's algorithm
+summary:
+    A project for Networks.
+course: Networks
+date:   Spring 2013
+images:
 
-![The graph assigned (as an adjacency matrix)](./graph.png)
+- title:    The graph
+  filename: '/portfolio/net-dijkstra/graph.png'
+  caption:  The graph assigned (as an adjacency matrix)
+---
+
+<!-- ![The graph assigned (as an adjacency matrix)](./graph.png) -->
 
 ## What was the project assignment? 
 Dijkstra's algorithm allows one to find the shortest path from one vertex/node to another in a graph/network. For this [assignment](./assignment.pdf), we were tasked with implementing Dijkstra's algorithm and verifying its correctness on a [given graph](./graph.png). [The end product](./code/dijkstra.html) is something I'm quite proud of - an implementation utilizing the algorithm visualization library that Mike Rosulek, Eric Spaulding, and I created as part of Mike's research.

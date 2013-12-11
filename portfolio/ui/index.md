@@ -12,14 +12,30 @@ images:
   caption:
 
     My low-fidelity sketch of a title screen for our app.
+    
+- title:    Lo-fi sketch
+  filename: '/portfolio/ui/lo-fi-img/2-new-game.png'
+  caption:  New game screen
+
+- title:    Lo-fi sketch
+  filename: '/portfolio/ui/lo-fi-img/3-map-in-game.png'
+  caption:  Map/in-game
+
+- title:    Lo-fi sketch
+  filename: '/portfolio/ui/lo-fi-img/4-tower-upgrades.png'
+  caption:  Upgrading towers
+
+- title:    Lo-fi sketch
+  filename: '/portfolio/ui/lo-fi-img/5-options-screen.png'
+  caption:  Options screen
+
+- title:    Lo-fi sketch
+  filename: '/portfolio/ui/lo-fi-img/6-achievements-screen.png'
+  caption:  Achievements screen
 
 ---
-# User interface design
-
-*Apocalypse Defense* Android game - Human-Computer Interaction / Game and Mobile App Development - Spring 2012
 
 <iframe width="420" height="315" src="//www.youtube-nocookie.com/embed/PXcc6wgqglA?rel=0" frameborder="0" allowfullscreen></iframe>
-
 
 ## What was the project assignment? 
 This Android game was a semester-long collaboration between Blair Gemmer, Nada Ibrahim (Alhothli), and me. We worked on the project in two courses - Game and Mobile App Development and Human-Computer Interaction (HCI). Groups were assigned, and I was able to convince my group to pursue development of a [tower-defense game](http://en.wikipedia.org/wiki/Tower_defense). We then worked through a handful of assignments and milestones in both classes to design, refine, and build the application.

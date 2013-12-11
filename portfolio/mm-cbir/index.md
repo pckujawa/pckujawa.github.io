@@ -1,7 +1,25 @@
-# Content-based Image Recognition (CBIR)
-Multimedia Processing - Fall 2013
+---
+layout: project
+title:  Content-based Image Recognition (CBIR)
+summary:
+    A project for Multimedia Processing.
+course: Multimedia Processing
+date:   Fall 2013
+images:
 
-<images "./part1/color_code.png" and "./part1/intensity.png" and "./part2/img1-all-textures.png" />
+- title:    Color code
+  filename: '/portfolio/mm-cbir/part1/color_code.png'
+  caption:  ...
+
+- title:    Intensity
+  filename: '/portfolio/mm-cbir/part1/intensity.png'
+  caption:  ...
+
+- title:    Textures
+  filename: '/portfolio/mm-cbir/part2/img1-all-textures.png'
+  caption:  ...
+---
+
 
 ## What was the project assignment? 
 For two assignments in multimedia processing, CSCI 578, we were instructed to create a graphical content-based image retrieval (CBIR) system. CBIR is the idea of finding images similar to a query image without having to search using keywords to describe the images.

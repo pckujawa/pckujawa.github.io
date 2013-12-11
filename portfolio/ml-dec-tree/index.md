@@ -1,7 +1,20 @@
-# Decision Tree Classifier
-Machine Learning - Spring 2012
+---
+layout: project
+title:  Decision Tree Classifier
+summary:
+    A machine learning classifier of the best sort.
+course: Machine Learning
+date: Spring 2012
+images:
 
-<img src="./tree-pat-subset.png" alt="Subset of a decision tree" width="300"/>
+- title: Subset of a decision tree
+  filename: '/portfolio/ml-dec-tree/tree-pat-subset.png'
+  caption:
+
+    One small part of a large decision tree which resulted from training on the Breast Cancer Winconsin (Original) data set.
+
+---
+
 
 ## What was the project assignment? 
 As one of the many classifiers that we were tasked with implementing in Doug Raiford's machine learning (ML) course, the decision tree stood above the rest in my mind. A classifier is an algorithm for identifying classes (for example, benign or malignant tumors) to which data points (rows/tuples of data with one or more attributes/dimensions) belong. The decision tree is a classifier which identifies which attributes are the most important (in terms of separating by class) and orders them by importance. Our [assignment](./assignment.pdf) was to implement the decision tree classifier (DTC) and test it on a well-known set of data known as the [Breast Cancer Wisconsin (Original) Data Set](http://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29), which contains 629 records with nine attributes/dimensions and two classes (benign or malignant). In the end, my classifier achieved 81% (n=70) accuracy.
