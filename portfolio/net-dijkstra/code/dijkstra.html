@@ -1,0 +1,373 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Test CSV Adjacency Matrix input (using jquery ui)</title>
+    <link rel="stylesheet" href="css/pepper-grinder/jquery-ui.custom.css" />
+    <link rel="stylesheet" href="css/av-graph.css">
+    <link rel="stylesheet" href="css/av-viz-viewers.css">
+    <link rel="stylesheet" href="css/av-viz-visualizer.css">
+    <style>
+.vertex, .vertex-locked {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    text-align: center;
+    position: absolute;
+    border-radius: 20px;
+    padding: 0;
+}
+/*.vertex-name {
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+    color: black;
+}*/
+.seen-vertex {
+    background-color: black;
+    color: white;
+}
+.start-vertex {
+    font-weight: bold;
+    background-color: red;
+}
+.target-vertex {
+    background-color: blue;
+}
+.u-vertex {
+    background-color: hsl(0, 100%, 29%);
+}
+.v-vertex {
+    background-color: #333;
+}
+#accordion-resizer {
+    padding: 10px;
+    /*width: 350px;*/
+    /*height: 220px;*/
+}
+#accordion textarea {
+    width: 600px;
+    height: 20em; /*How to get to fill?*/
+}
+    </style>
+</head>
+<body>
+
+    <div id="accordion-resizer" class="ui-widget-content">
+        <div id="accordion">
+            <h3>Input CSV Adjacency Matrix</h3>
+            <div>
+                <form action="">
+                    <textarea id="av-csv-adj-matrix" placeholder="Paste or type a CSV adjacency matrix, with or a column header row and column labels.">
+ ,A,B,C,D,E,F,G,H,I,J,K,L,M
+A,0,5,0,0,0,0,0,5,0,0,0,0,0
+B,5,0,5,0,0,0,0,0,2,0,0,0,0
+C,0,5,0,5,0,0,0,0,0,2,0,0,0
+D,0,0,5,0,5,0,0,0,0,0,0,0,0
+E,0,0,0,5,0,5,0,0,0,0,0,0,0
+F,0,0,0,0,5,0,5,0,0,0,2,0,0
+G,0,0,0,0,0,5,0,5,0,0,0,2,0
+H,5,0,0,0,0,0,5,0,0,0,0,0,0
+I,0,2,0,0,0,0,0,0,0,0,0,2,1
+J,0,0,2,0,0,0,0,0,0,0,2,0,1
+K,0,0,0,0,0,2,0,0,0,2,0,0,1
+L,0,0,0,0,0,0,2,0,2,0,0,0,1
+M,0,0,0,0,0,0,0,0,1,1,1,1,0
+</textarea>
+                </form>
+            </div>
+            <h3>Pseudocode</h3>
+            <div id="av-container-pseudocode">
+<code>Dijkstra(G, s, t):
+for each v in G.V - {s}:
+    v.dist = infinity
+    v.pred = null
+    v.seen = false
+s.dist = 0
+Q = {G.V}
+while Q &ne; &empty;:
+    u = Q.extractMin()
+    u.seen = true
+    for each v in G.adj(u):
+        alt = u.dist + weight(u -> v)
+        if (alt &lt; v.dist):
+            v.dist = alt
+            v.pred = u</code>
+            </div>
+        </div>
+    </div>
+
+    <h3>Controls</h3>
+    <div id="av-viz-controls">
+        <div id='av-graph-layout-controls'>
+            <input type=submit value="Begin" id="startLayout">
+            <p style="display: none;">I'm laying out your graph using a force-directed algorithm. You need to wait for the callback for the vizualization controls to show up. It usually takes a few seconds. When it's done, click Execute and you'll see the graph. You can open the console (Ctrl+Shift+J) to see progress messages.</p>
+        </div>
+    </div>
+
+    <h3>Output</h3>
+    <div id='algo-output' style="border: 1px dashed gray"></div>
+
+    <div id="av-container-graph" style="width: 600px; height: 400px; border: 1px solid gray; padding: 10px;">(Click Execute)</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.jsPlumb-1.3.14-all.js "></script>
+    <script src="js/sprintf-0.7-beta1.js "></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/underscore.string.js"></script>
+    <script src="js/jquery.qtip-1.0.0-rc3.min.js "></script>
+    <script src="js/av-common.js"></script>
+    <script src="js/av-GraphModel.js"></script>
+    <script src="js/av-JsPlumbGraphViewer.js"></script>
+    <script src="js/av-JsPlumbGraphInputter.js"></script>
+    <script src="js/av-VertexViewer.js"></script>
+    <script src="js/av-viz-visualizer.js "></script>
+
+    <script src="js/springy.js"></script>
+    <script src="js/av-layout.js"></script>
+
+<script type="text/javascript">
+// http://stackoverflow.com/a/14991797/116891
+function parseCsv(str) {
+    /// Return array of rows, each as array of cols
+    var arr = [];
+    var quote = false;  // true means we're inside a quoted field
+
+    // iterate over each character, keep track of current row and column (of the returned array)
+    for (var row = col = c = 0; c < str.length; c++) {
+        var cc = str[c], nc = str[c+1];        // current character, next character
+        arr[row] = arr[row] || [];             // create a new row if necessary
+        arr[row][col] = arr[row][col] || '';   // create a new column (start with empty string) if necessary
+
+        // If the current character is a quotation mark, and we're inside a
+        // quoted field, and the next character is also a quotation mark,
+        // add a quotation mark to the current column and skip the next character
+        if (cc == '"' && quote && nc == '"') { arr[row][col] += cc; ++c; continue; }
+
+        // If it's just one quotation mark, begin/end quoted field
+        if (cc == '"') { quote = !quote; continue; }
+
+        // If it's a comma and we're not in a quoted field, move on to the next column
+        if (cc == ',' && !quote) { ++col; continue; }
+
+        // If it's a newline and we're not in a quoted field, move on to the next
+        // row and move to column 0 of that new row
+        if (cc == '\n' && !quote) { ++row; col = 0; continue; }
+
+        // Otherwise, append the current character to the current column
+        arr[row][col] += cc;
+    }
+    return arr;
+}
+
+function matrixFromCsvInput () {
+    // us=unsafe (string), s=(safe) string
+    var usInput = $('#av-csv-adj-matrix').val(); // Watch out! Can't use .text() or it grabs the original DOM value.
+    if (!usInput) { return []; }
+    // trim and escape
+    var sInput = _.compose(_.string.escapeHTML, _.string.trim)(usInput);
+    return parseCsv(sInput);
+}
+
+// Strategy:
+// Get matrix as array of arrays
+// Assume labels are first row (and first col)
+// Assume cells are numeric, indicating edge weight (and zero is no edge)
+// So for each row:
+//      if the column is nonzero, create edge to that column's id with cell value as weight
+function createGraphFromAdjMatrix (matrix) {
+    var header = matrix[0], // assume labels are first row and ** first cell matches /\s*/ **
+        adj = {},  // {'string row/source ids' => {'string col/target ids' => edgeObj} }
+        vertices = [];
+    // Iterate through the rest of the rows
+    for (var rowIx = matrix.length - 1; rowIx >= 1; rowIx--) {
+        var row = matrix[rowIx],
+            sRowId = row[0]; // assume label is first col
+        for (var colIx = row.length - 1; colIx >= 1; colIx--) {
+            var edgeData = row[colIx],
+                sColId = header[colIx],
+                edge = null,
+                attrName = 'weight', // How to interpret relation of cell value to edge obj; could be looked-up or dynamic
+                parser = parseFloat, // ibid
+                ignoreValue = 0; // ibid
+            adj[sRowId] = adj[sRowId] || {};
+            var parsedData = parser(edgeData);
+            if (parsedData === ignoreValue) {continue;} // Don't build edge
+
+            // Create the edge (redundant data stored in edge, unfortunately)
+            edge = {source: sRowId, target: sColId}
+            edge[attrName] = parsedData;
+            adj[sRowId][sColId] = edge;
+        }
+    }
+
+    // Now create vertices with the correct ids and any relevant data
+    vertices = _.map(header.slice(1), function (sId) {
+        return {id: sId};
+    });
+
+    var isDirected = false;
+    return new av.GraphModel(isDirected).loadFromAdjIdMatrixAndVertexObjs(adj, vertices);
+}
+
+// var gInputter = {
+//     getInput: function () {
+//         return createGraphFromAdjMatrix(matrixFromCsvInput());
+//     }
+// }
+
+
+//turn the code block into the interactive pseudocode
+av.OtherUtil.convertPseudoCode('av-container-pseudocode');
+
+function createAndRunViz (graphModel) {
+    return new av.Visualizer({
+    controls: 'av-viz-controls',
+    pseudocode: 'av-container-pseudocode',
+    inputters: {
+        'G': { getInput: function () { return graphModel; } }
+        , 'kludgeToAllowNodeMovement': new av.JsPlumbGraphInputter('#av-container-graph')
+        , startId: new av.PromptInputter('Start vertex id')
+        , targetId: new av.PromptInputter('End vertex id')
+    },
+    varViewers: {
+        'G': new av.JsPlumbGraphViewer({
+            container: '#av-container-graph'
+            , renderVertexContents: function(v, $vtx) {
+                var d = (v.d == Infinity ? "\u221E" : v.d);
+                var pred = v.pred ? v.pred.id : "null";
+                if (v.seen) { $vtx.addClass('seen-vertex'); }
+
+                $vtx.qtip({
+                    content: "<table>"
+                           + "<tr><td class='vtx-attr'>dist:</td><td>" + d + "</td></tr>"
+                           + "<tr><td class='vtx-attr'>pred:</td><td>" + pred + "</td></tr>"
+                           + "</table>"
+                });
+
+                $vtx.append($("<div class='vertex-name'>").append(v.id));
+                $vtx.append(d);
+            }
+            , renderEdgeLabel: function (edge) { return edge.weight; }
+            , renderEdgeStyle: function (edge) {
+                // Make predecessor lines thicker and colored
+                // BUG: I don't think the edge objects are connected up to the true vtx models (this never gets called)
+                if (edge.target.pred && edge.target.pred.id == edge.source.id) {
+                    return {strokeStyle: '#c88', lineWidth: 4};
+                }
+                return {lineWidth: 1};
+            }
+        })
+        , s: new av.VertexViewer({
+            cssClass: 'start-vertex'
+        })
+        , t: new av.VertexViewer({
+            cssClass: 'target-vertex'
+        })
+        , u: [new av.VertexViewer({cssClass: 'u-vertex'})]//, new av.ConsoleViewer('u')]
+        , v: [new av.VertexViewer({cssClass: 'v-vertex'})]//, new av.ConsoleViewer('v')]
+    },
+    generateViz: function (viz) {
+// KLUDGE to disable all modes except moving vertices. Should be in Viewer class.
+$("#av-graph-mode-container :radio[value!='move']").attr('disabled', true)
+// BUG: On 'next', the mode isn't getting re-triggered. And when we disable other radiobuttons, we can't newly-select 'move' to trigger the event so that it is reapplied!
+
+// Bind a "shortcut" variable to the snapshot function
+var _s = _.bind(viz.snapshot, viz);
+
+// Do Dijkstra
+with (viz.vars) {
+    // global userGraph
+    userGraph = G;
+    var vs = G.V(), Q, u, v, s; // Need to define viewed vars too
+
+    //init the graph
+    for (var i = vs.length - 1; i >= 0; i--) {
+        vs[i].d = Infinity;
+        vs[i].pred = null;
+        vs[i].seen = false;
+    }
+    // Find the actual start vtx obj and start with its dist=0
+    s = _(vs).where({id: startId.toLocaleUpperCase()})[0];
+    s.d = 0;
+    // Similarly, hold on to a reference of the target vtx obj
+    var t = _(vs).where({id: targetId.toLocaleUpperCase()})[0];
+
+    Q = vs; // Just use an array as the prio queue
+_s(6); // Take a snapshot for completing line 6
+
+    while (Q.length > 0) {
+        // Inefficient priority queue using an array thats sorted each time through
+        Q.sort( function(a, b) { return a.d - b.d } ); // Shouldn't affect original vtxs ordering
+
+        u = Q.shift();
+        u.seen = true;
+_s(9);
+        // Iterate through neighbors
+        vs = G.adj(u);
+        // vs.sort( function(a,b){ return b.name.localeCompare(a.name) });
+        for (var i = vs.length - 1; i >= 0; i--) {
+            v = vs[i];
+_s(10);
+            // "Relax" distances - if a shorter path found, update accordingly
+            if (u.d + G.edge(u, v).weight < v.d) { // NOTE: u.d cannot still be Inf or this will never be true
+                v.d = u.d + G.edge(u,v).weight;
+                v.pred = u;
+_s(14);
+            }
+        }
+    }
+    u = null; v = null; // Clear values so they don't get styles applied anymore
+
+    // Walk the predecessors from end vtx to start, creating an in-order array of the path
+    function getPreds (vtx) {
+        if (vtx.pred === null) { return [vtx.id]; }
+        return getPreds(vtx.pred).concat([vtx.id]);
+    }
+    var sPath = getPreds(t).join('->');
+    var output = "Shortest path from " + startId + " to " + targetId + " was " + sPath;
+    output += '<br>';
+    output += "total distance: " + t.d;
+    console.log(output);
+    $("#algo-output").html(output);
+} // end with
+_s(-1);
+    }
+});
+}
+
+$('#startLayout').click(function () {
+    $('#av-graph-layout-controls p').show(); // Explanation text
+    var $container = $('#av-container-graph'),
+        origGraphModel = createGraphFromAdjMatrix(matrixFromCsvInput());
+
+    av.layoutUsingSpringy(origGraphModel, $container.width(), $container.height(), function (model) {
+        //global myviz
+        console.log('Got called back from layoutUsingSpringy, so graph model should have x,y posns');
+        myviz = createAndRunViz(model); // <----- magic
+        //NOTE: The viz code seems to be caching the x,y posns but not any user-made movements
+    });
+})
+
+
+$(function() {
+    $( "#accordion" ).accordion({
+        // heightStyle: "fill", // Bad: doesn't resize when textbox resizes
+        heightStyle: "content",
+        collapsible: true
+    });
+    $( "#accordion-resizer" ).resizable({
+        minHeight: 140,
+        minWidth: 200,
+        resize: function() {
+            $( "#accordion" ).accordion( "refresh" );
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Renamed writeups to index.md in respective folder (matching website names).
+Extracted UI lo-fi images.

@@ -1,0 +1,21 @@
+.vertex_active {
+	background-color: yellow;
+}
+.vertex_in_open {
+	background-color: green;
+}
+.vertex_in_closed {
+	background-color: gray;
+}
+.vertex_is_child {
+	background-color: red;
+}
+.edge-label {
+    background: white;
+}
+.vertex-start {
+    border: 1px solid blue;
+}
+.vertex-finish {
+    border: 1px solid orange;
+}

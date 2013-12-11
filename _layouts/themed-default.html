@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <title>{{ page.title }}</title>
+    
+    <link href="{{ site.baseurl }}assets/css/colorbox.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}assets/css/screen.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    
+    <!-- Shouldn't this js be in the body? -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="/javascripts/respond.js"></script>
+    <script src="//use.edgefonts.net/source-sans-pro:n3,i3,n4,i4,n7,i7.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/stylesheets/ie.css">
+    <![endif]-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <!-- <div id="header">
+      <nav>
+
+      </nav>
+    </div> --><!-- end header -->
+    
+    <div class="wrapper">
+      <section>
+        <div id="title">
+          <h1>Pat Kujawa</h1>
+          <p>Computer Science Master's Portfolio</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- <div class="wrap">
+      <header role="banner">
+        <div id="logo">
+          <a href="/" >
+            <h1>Pat Kujawa</h1>
+            <p id="tagline">Computer Science Master's Portfolio</p>
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="/portfolio">Projects</a></li>
+            <li><a href="/portfolio/cv">CV</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+ -->
+    <div class="wrap">
+      <main role="main">
+        <article>
+          {{ content }}
+        </article>
+
+        <aside>
+          <h2>Projects</h2>
+          <dl>
+            {% for page in site.pages %}
+              {% if page.summary %}
+                <dt><a href="{{ page.url }}">{{ page.title }}</a></dt>
+                <dd>{{ page.summary }}</dd>
+              {% endif %}
+            {% endfor %}
+          </dl>
+        </aside>
+      </main>
+    </div>
+
+    <div class="wrap">
+      <footer>
+        <article>
+          <br><br>
+          <p>&copy;2013 Pat Kujawa.</p>
+          <p>A portfolio submitted in partial fulfillment of the
+            requirements for the degree of Master of Science in Computer
+            Science to the University of Montana-Missoula.</p>
+        </article>
+
+        <aside>
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="http://linkedin.com/in/patku">LinkedIn</a></li>
+            <li><a href="https://github.com/pckujawa">GitHub</a>
+          </ul>
+        </aside>
+      </footer>
+    </div>
+
+    <!-- // <script src="{{ site.baseurl }}assets/js/jquery-1.4.3.min.js"></script> -->
+    <script src="{{ site.baseurl }}assets/js/jquery.colorbox.js"></script>
+    <script src="{{ site.baseurl }}assets/js/portfolio.js"></script>
+
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-46107668-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+.vertex, .vertex-locked {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    background: #eee;
+    text-align: center;
+    position: absolute;
+    border-radius: 40px;
+    padding: 0;
+}
+
+.vertex-highlighted {
+    /*-moz-box-shadow: 5px 5px 10px #ccc;*/
+    background-color: yellow;
+}
+
+.selected {
+    /*-moz-box-shadow: 5px 5px 10px #aaa;*/
+    background-color: red;
+}
+
+.vertex-data {
+    /*width: 20px;*/
+    /*height: 20px;*/
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+    display: table;
+    vertical-align: middle;
+    overflow: auto;
+    /*position: relative;
+    left: 0px;
+    top: 0px; */
+}
+
+/*.
+av-connection-source {
+    background: transparent url("../img/av-new-edge-bw.png") no-repeat center center;
+    cursor: default;
+}
+.av-connection-source:hover {
+    background-image: url("../img/av-new-edge.png");
+}
+*/
+.av-vertex-delete {
+    background: transparent url("../img/av-close-bw.png") no-repeat center center;
+    cursor: default;
+}
+
+.av-vertex-delete:hover {
+    background-image: url("../img/av-close.png");
+}
+
+.vertex:hover .vertex-delete,
+.vertex:hover .connection-source {
+    display: block;
+}
+
+.vertex.vertex-drag-onto:hover.vertex-delete,
+.vertex.ui-draggable-dragging:hover .vertex-delete,
+.vertex.vertex-drag-onto:hover.connection-source,
+.vertex.ui-draggable-dragging:hover .connection-source {
+    display: none;
+}
+
+.vertex-drag-onto {
+    -webkit-box-shadow: 5px 5px 10px #aaa;
+    -moz-box-shadow: 5px 5px 10px #aaa;
+    box-shadow: 5px 5px 10px #aaa;
+    background: #ddd;
+}
+
+.vertex-drag-onto .vertex-data, .vertex-drag-onto .connection-source {
+    cursor: default;
+}
+
+.ui-draggable-dragging {
+    -webkit-box-shadow: 5px 5px 10px #aaa;
+    -moz-box-shadow: 5px 5px 10px #aaa;
+    box-shadow: 5px 5px 10px #aaa;
+    background: #ddd;
+}
+
+.edge-label {
+    background: white;
+}
+
+#container, #container-graph {
+    width: 600px;
+    height: 500px;
+    border: 1px solid #ccc;
+}
+
+#controlpanel {
+    width: 100px;
+    height: 200px;
+}

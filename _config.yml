@@ -2,7 +2,7 @@ permalink: pretty
 markdown:  rdiscount
 rdiscount:
   extensions: [smart]
-server_port: 5000
+port: 5000
 exclude:
   - Gemfile
   - Gemfile.lock

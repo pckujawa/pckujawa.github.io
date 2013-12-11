@@ -1,0 +1,707 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"h",
+				"h3	h3 (=)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1728,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/dev/pckujawa.github.io/_layouts/project.html",
+			"settings":
+			{
+				"buffer_size": 908,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ui/index.md",
+			"settings":
+			{
+				"buffer_size": 5771,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/dev/pckujawa.github.io/_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 2163,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/dev/pckujawa.github.io/_config.yml",
+			"settings":
+			{
+				"buffer_size": 148,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "lo-fi-img/1-title-screen.png\nlo-fi-img/2-new-game.png\nlo-fi-img/3-map-in-game.png\nlo-fi-img/4-tower-upgrades.png\nlo-fi-img/5-options-screen.png\nlo-fi-img/6-achievements-screen.png\n",
+			"settings":
+			{
+				"buffer_size": 180,
+				"line_ending": "Windows",
+				"name": "lo-fi-img/1-title-screen.png"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 196.0,
+		"selected_items":
+		[
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"rst",
+				"Set Syntax: Sublime reStructuredText"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"disco",
+				"Package Control: Discover Packages"
+			],
+			[
+				"view",
+				"RST Preview"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/dev/oss/deld.in/index.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/ui/index.md",
+		"/C/dev/pckujawa.github.io/_plugins/liquid_smart.rb",
+		"/C/dev/pckujawa.github.io/Gemfile",
+		"/C/dev/pckujawa.github.io/Rakefile",
+		"/C/dev/pckujawa.github.io/portfolio/ui/index.md.md",
+		"/C/dev/pckujawa.github.io/portfolio/ui.md",
+		"/C/dev/pckujawa.github.io/params.json",
+		"/C/dev/oss/deld.in/Rakefile",
+		"/C/dev/pckujawa.github.io/index.html",
+		"/C/Users/Pat/Dropbox/Backup/app settings/copy app settings files to here.bat",
+		"/C/Users/Pat/Dropbox/MDT Backup/backup.bat",
+		"/C/dev/oss/deld.in/public/index.html",
+		"/C/dev/oss/deld.in/Gemfile.lock",
+		"/C/dev/oss/deld.in/config.ru",
+		"/C/dev/oss/deld.in/Procfile",
+		"/C/dev/oss/deld.in/.gitignore",
+		"/C/dev/oss/deld.in/Gemfile",
+		"/C/Temp/xcopytest/copy-portfolio.bat",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/net-dijkstra/net-dijkstra.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Spring/Networks 466/repo/dijkstra/networks.csv",
+		"/C/Users/Pat/Google Drive/AutoHotkey Scripts and Files/EssentialScripts.ahk",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/ml-dec-tree/ml-dec-tree.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/2012 Spring/ML Machine Learning 557/Decision Tree P4/test.csv",
+		"/C/Users/Pat/Dropbox/UM Grad School/2012 Spring/ML Machine Learning 557/Decision Tree P4/train.csv",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/why can't hg see this.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/self-reflection.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/sim-friction/sim-friction.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Spring/Sim 477/MolecularDynamics/Friction/report/report.parsed.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Spring/Sim 477/MolecularDynamics/Friction/report/report.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/mm-cbir/mm-cbir.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/mm-cbir/portfolio-writeup.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/self‐reflection.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/ui/ui.md",
+		"/C/Apps/PathUtils/img2pdf.cmd",
+		"/C/Apps/PathUtils/gs.cmd",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/patrec-feature-selection.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/net-dijkstra.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/ml-dec-tree.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/ui.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Spring/Sim 477/Simulation Heracles Share/pretty_pics/constants.ini",
+		"/C/Apps/PathUtils/dot.bat",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/Multimedia MM processing 578/asn5-journal-review/report.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/Big Data M 491/demo week 12, hw 4/Calibr.m",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/Big Data M 491/demo week 9/OptLin.m",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/Big Data M 491/Homework/hw5/hw5.ipynb",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/From OConnor VB_100_aut2012/100_final_exam_aut_2011.txt",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/From OConnor VB_100_aut2012/100_final_exam_spr_2011.txt",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/quizzes/testing gift.txt",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/Multimedia MM processing 578/asn4-audio-classifier/report.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/projects/px nonprofit donor sort.md",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/Multimedia MM processing 578/asn3-relevance-feedback/My solution/CLI/patku_cbir README.txt",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/students names.txt",
+		"/C/Users/Pat/AppData/Local/Temp/7zODB03.tmp/sample.js",
+		"/C/dev/cs100/p5subs/Nate PRS new/PRS.sln",
+		"/C/dev/cs100/week7/LiveCodeNumberToWord/.hgignore",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/Tutorials/.hgignore",
+		"/C/Temp/Recording_20131004_1139.mht",
+		"/C/Users/Pat/AppData/Local/Temp/tmp8165.tmp.txt",
+		"/C/Users/Pat/AppData/Local/Temp/tmp5228.tmp.txt",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/Big Data M 491/Demo/F.m",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/tests/1/Heather Final Grades_Sheet_TestOne.csv",
+		"/E/iPod_Control/iTunes/Play Counts",
+		"/E/iPod_Control/iTunes/Rentals.plist",
+		"/E/iPod_Control/iTunes/iTunesPrefs.plist",
+		"/E/iPod_Control/iTunes/CurrentOnTheGoPlaylist.plist",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/quizzes/quiz 3 week 5, ch3 and ch4.gift.txt",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/projects/P2 description.md",
+		"/C/Users/Pat/Dropbox/Backup/app settings/launchy.ini",
+		"/C/dev/oss/javaanpr/build.xml",
+		"/C/Apps/PathUtils/wmifix.bat",
+		"/C/dev/cs100/p2subs/p2/Evan Wolf/Project2/Project2/Form1.vb",
+		"/C/Chocolatey/bin/wget.bat",
+		"/C/Users/Pat/AppData/Roaming/Launchy/launchy.ini",
+		"/D/downloads/License Plate Recognition From Still Images and Video Sequences, A Survey_1.xml",
+		"/C/Python27/Lib/site-packages/SimpleCV/base.py",
+		"/C/Apps/PathUtils/unzipall.bat",
+		"/C/dev/cs100/p2subs/echoParams.bat",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/quizzes/quiz 2 week 2 ch 2 and ch 1 recap.gift.txt numbered.txt",
+		"/C/Users/Pat/Dropbox/Kindle/My Clippings.txt",
+		"/D/downloads/CSCI100.10-72667-Fall2013 Grades (3).xml",
+		"/C/Apps/PathUtils/7z.bat",
+		"/C/Users/Pat/AppData/Local/ExtractNow/extractnow.ini",
+		"/C/Apps/PathUtils/ed.bat",
+		"/C/Chocolatey/bin/cpython.bat",
+		"/C/Chocolatey/bin/NuGet.bat",
+		"/C/Users/Pat/Google Drive/AutoHotkey Scripts and Files/PandoraControls.ahk",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/quizzes/quiz 2 week 2 ch 2 and ch 1 recap.gift.txt",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/quizzes/quiz 1 week 1 ch 1.gift.txt",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/CSCI 100 Syllabus.md",
+		"/C/Apps/Autorun.inf",
+		"/G/PortableCamtasiaRelay/autorun.inf",
+		"/D/downloads/CSCI100.10-72667-Fall2013-Quiz 1, week 1 and chapter 1-responses-20130903_2044-tab_separated.txt",
+		"/D/downloads/CSCI100.10-72667-Fall2013-Quiz 1, week 1 and chapter 1-responses-20130903_2043-tab_separated.txt",
+		"/C/Users/Pat/AppData/Local/Temp/questions-CSCI100.10-72667-Fall2013-Default for Quiz 0, student information inventory-20130902-2058.xml",
+		"/C/Temp/UnitConversions/Command.cs",
+		"/C/Temp/UnitConversions/Revit.ini",
+		"/C/Temp/UnitConversions/Test Family.rfa",
+		"/G/CSCI 100 book tutorials/Chap1/Project Files/Wage Calculator/Wage Calculator/Form1.vb",
+		"/C/Users/Pat/AppData/Local/Temp/7zOE3CB.tmp/buildVersionHistory.plist",
+		"/C/Users/Pat/AppData/Local/Temp/7zO6C7C.tmp/buildVersionHistory.plist",
+		"/C/Users/Pat/AppData/Local/Temp/7zO697.tmp/index.xml",
+		"/C/Users/Pat/Google Drive/AutoHotkey Scripts and Files/_ Set sublime text as default editor for scripts.reg",
+		"/C/Users/Pat/Google Drive/AutoHotkey Scripts and Files/MyFavorites.ahk",
+		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/AutoHotKey/AutoHotKey.tmLanguage",
+		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/AutoHotKey/Comments.tmPreferences",
+		"/C/Users/Pat/Google",
+		"/C/Users/Pat/Google Drive/AutoHotkey Scripts and Files/Drive/AutoHotkey",
+		"/C/Users/Pat/Google Drive/AutoHotkey Scripts and Files/Scripts",
+		"/C/Users/Pat/Google Drive/AutoHotkey Scripts and Files/and",
+		"/C/Users/Pat/Google Drive/AutoHotkey Scripts and Files/Files/EssentialScripts.ahk",
+		"/C/Users/Pat/Google Drive/CSCI_100/2012_Fall/ProgAssign1.pages",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/CSCI 100 sublime.sublime-project",
+		"/C/Apps/Hawkeye winforms gui spy/settings.xml",
+		"/D/downloads/CSCI100.10-72667-Fall2013 Grades.xml",
+		"/D/downloads/CSCI100.10-72667-Fall2013 Grades (2).xml",
+		"/D/downloads/CSCI100.10-72667-Fall2013 Grades (1).xml",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/Book resources/Student Sample Programs/Chap1/Project Files/Wage Calculator/.hgignore",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/Quiz 1.txt",
+		"/C/Users/Pat/AppData/Roaming/StExBar/Commands.ini",
+		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/Quiz 0,1.txt",
+		"/D/downloads/events.ics",
+		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/LiveReload/README.md",
+		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Pat/Google Drive/CSCI_100/2013_Spring/Syllabus/Syllabus.tex",
+		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"*.txt",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"src=\"",
+			"href=\"",
+			",",
+			"C:\\Users\\Pat\\Dropbox\\UM Grad School\\Portfolio\\sim-friction\\",
+			"@\"",
+			"Ctrl",
+			"\\=",
+			"=",
+			" =",
+			"<",
+			"html",
+			"(<?= )\\{",
+			"(<?=\\W)\\{",
+			"(?<\\W)\\{",
+			"(?<=\\w)\\{",
+			"(?=\\w)\\{",
+			"(?<\\w){",
+			"{",
+			"    \n",
+			"given the foll",
+			"here",
+			"%",
+			"multi",
+			"match",
+			"\n    ",
+			"multi",
+			"}",
+			"{",
+			"~%100%~",
+			"\\*(\\d{4}): \\[\\[([^\\]]+).*",
+			"\\*\\d{4}: \\[\\[([^\\]]+).*",
+			"\\d{4}(?=\\w{4,})",
+			"(?=\\d\\w)",
+			"::",
+			"~",
+			"~ ",
+			"check",
+			"multiple choice",
+			"->",
+			"=>",
+			"wael",
+			".",
+			"\"",
+			"@umontana.edu",
+			",",
+			"arata",
+			"False",
+			"TRUE",
+			"True",
+			"False",
+			"=",
+			"=True",
+			"=",
+			"rob",
+			";",
+			"yibo",
+			"jar",
+			";",
+			"\"dog",
+			"\\t",
+			"leah",
+			"^::",
+			"::",
+			"sara",
+			";",
+			"gregg",
+			"\"In progress\"\n",
+			"	",
+			"holt",
+			"joseph",
+			"\"c\"",
+			"f_Hotkey3",
+			";",
+			"Jim",
+			"jim",
+			"<score>-</score>",
+			"holly",
+			"@umontana.edu;",
+			"Major",
+			"programming assi",
+			"BEGIN:VEVENT\n",
+			"spac",
+			"remove",
+			"=",
+			"optional",
+			"Mon & Wed ",
+			"===",
+			"line",
+			"delete",
+			"Chapter",
+			"Week",
+			"BEGIN:VEVENT\n",
+			"BEGIN",
+			"**",
+			"Major",
+			"Chemistry",
+			"History",
+			"Major:  Marketing\n",
+			"Major:  Management Information Systems\n",
+			"Major:",
+			"Major:  Business Administration\n",
+			"Business",
+			"Major:",
+			"Finance",
+			"Undeclared",
+			"Major:  ",
+			"Finance",
+			"\n ",
+			" \n",
+			"Accounting",
+			"Computer",
+			"\\n",
+			"[Strachan, Gayleen M - 08/06/2013]",
+			"Users"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\\1",
+			"\n",
+			"#",
+			"==",
+			"\n\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1728,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/dev/pckujawa.github.io/_layouts/project.html",
+					"settings":
+					{
+						"buffer_size": 908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ui/index.md",
+					"settings":
+					{
+						"buffer_size": 5771,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/dev/pckujawa.github.io/_layouts/default.html",
+					"settings":
+					{
+						"buffer_size": 2163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1592,
+								1592
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 142.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/dev/pckujawa.github.io/_config.yml",
+					"settings":
+					{
+						"buffer_size": 148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								82,
+								82
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "lo-fi-img/1-title-screen.png",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 183.0
+	},
+	"output.sbt":
+	{
+		"height": 0.0
+	},
+	"output.sbt_error":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 129.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"_layout",
+				"pckujawa.github.io/_layouts/project.html"
+			],
+			[
+				"ui",
+				"ui/ui.md"
+			],
+			[
+				"",
+				"portfolio-writeup.md"
+			],
+			[
+				"opt",
+				"demo week 9/OptLin.m"
+			],
+			[
+				"test",
+				"quizzes/testing gift.txt"
+			],
+			[
+				"names",
+				"students names.txt"
+			],
+			[
+				"testin",
+				"quizzes/testing gift.txt"
+			],
+			[
+				"quiz",
+				"quizzes/quiz 1 week 1 ch 1.gift.txt"
+			],
+			[
+				"quiz2",
+				"quizzes/quiz 2 week 2 ch 2 and ch 1 recap.gift.txt numbered.txt"
+			],
+			[
+				"2",
+				"quizzes/quiz 2 week 2 ch 2 and ch 1 recap.gift.txt"
+			],
+			[
+				"week2",
+				"quizzes/quiz 2 week 2 ch 2 and ch 1 recap.gift.txt"
+			],
+			[
+				"syll",
+				"CSCI 100 Syllabus.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Pat/Dropbox/UM Grad School/2013 Spring/Sim 477/sim for python examples.sublime-project"
+			],
+			[
+				"sim",
+				"/C/Users/Pat/Dropbox/UM Grad School/2013 Spring/Sim 477/sim for python examples.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
