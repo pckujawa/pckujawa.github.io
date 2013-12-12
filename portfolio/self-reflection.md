@@ -1,3 +1,8 @@
+---
+layout: themed-default
+title:  Self-reflection
+---
+
 # Self-reflection
 Herein I present a short reflection on my time at the University of Montana as a Master's student in Computer Science. I started the program in August 2011 after working as a software engineer since May 2009 (when I graduated from Montana State University with a B.S. Physics and B.S. Computer Engineering).
 

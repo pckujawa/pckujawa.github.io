@@ -16,5 +16,5 @@ $(document).ready(function () {
         }
     });
 
-    $(".lo-fi-sketches").colorbox({rel:'lo-fi-sketches', transition:"none", width:"75%", height:"75%"});
+    $(".lo-fi-sketches").colorbox({rel:'lo-fi-sketches', width:"95%", height:"95%"});
 });
