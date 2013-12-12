@@ -9,15 +9,15 @@ images:
 
 - title:    Color code
   filename: '/portfolio/mm-cbir/part1/color_code.png'
-  caption:  ...
+  caption:  Results obtained from comparing histograms based on image color information.
 
 - title:    Intensity
   filename: '/portfolio/mm-cbir/part1/intensity.png'
-  caption:  ...
+  caption:  Results from histograms of intensity.
 
 - title:    Textures
   filename: '/portfolio/mm-cbir/part2/img1-all-textures.png'
-  caption:  ...
+  caption:  Results from part 2, using texture features and relevance feedback.
 ---
 
 

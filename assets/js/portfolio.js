@@ -15,4 +15,6 @@ $(document).ready(function () {
             figures.addClass('thumbs');
         }
     });
+
+    $(".lo-fi-sketches").colorbox({rel:'lo-fi-sketches', transition:"none", width:"75%", height:"75%"});
 });

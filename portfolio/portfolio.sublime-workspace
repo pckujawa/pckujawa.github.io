@@ -12,18 +12,10 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "/C/dev/pckujawa.github.io/_layouts/themed-default.html",
 			"settings":
 			{
-				"buffer_size": 1728,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/dev/pckujawa.github.io/_layouts/project.html",
-			"settings":
-			{
-				"buffer_size": 908,
+				"buffer_size": 3687,
 				"line_ending": "Windows"
 			}
 		},
@@ -31,49 +23,64 @@
 			"file": "ui/index.md",
 			"settings":
 			{
-				"buffer_size": 5771,
+				"buffer_size": 6199,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/dev/pckujawa.github.io/_layouts/default.html",
+			"file": "ml-dec-tree/index.md",
 			"settings":
 			{
-				"buffer_size": 2163,
+				"buffer_size": 3150,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/C/dev/pckujawa.github.io/_config.yml",
+			"file": "mm-cbir/index.md",
 			"settings":
 			{
-				"buffer_size": 148,
+				"buffer_size": 3829,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "lo-fi-img/1-title-screen.png\nlo-fi-img/2-new-game.png\nlo-fi-img/3-map-in-game.png\nlo-fi-img/4-tower-upgrades.png\nlo-fi-img/5-options-screen.png\nlo-fi-img/6-achievements-screen.png\n",
+			"file": "net-dijkstra/index.md",
 			"settings":
 			{
-				"buffer_size": 180,
-				"line_ending": "Windows",
-				"name": "lo-fi-img/1-title-screen.png"
+				"buffer_size": 3026,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "sim-friction/index.md",
+			"settings":
+			{
+				"buffer_size": 3764,
+				"line_ending": "Windows"
 			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 196.0,
+		"height": 265.0,
 		"selected_items":
 		[
 			[
-				"json",
-				"Set Syntax: JSON"
-			],
-			[
 				":w",
 				":w - Save"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
 			],
 			[
 				"wrap",
@@ -82,10 +89,6 @@
 			[
 				"list",
 				"Package Control: List Packages"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"remove",
@@ -108,7 +111,7 @@
 				"RST Preview"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -125,6 +128,10 @@
 	},
 	"file_history":
 	[
+		"/C/dev/pckujawa.github.io/portfolio/copy-portfolio.bat",
+		"/C/dev/pckujawa.github.io/portfolio/index.html",
+		"/C/dev/pckujawa.github.io/_layouts/project.html",
+		"/C/dev/pckujawa.github.io/_config.yml",
 		"/C/dev/oss/deld.in/index.md",
 		"/C/Users/Pat/Dropbox/UM Grad School/Portfolio/ui/index.md",
 		"/C/dev/pckujawa.github.io/_plugins/liquid_smart.rb",
@@ -248,11 +255,7 @@
 		"/C/Users/Pat/Dropbox/UM Grad School/2013 Fall/TA CSCI 100 VB/Quiz 0,1.txt",
 		"/D/downloads/events.ics",
 		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/LiveReload/README.md",
-		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Pat/Google Drive/CSCI_100/2013_Spring/Syllabus/Syllabus.tex",
-		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+		"/C/Users/Pat/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings"
 	],
 	"find":
 	{
@@ -272,6 +275,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"/i",
+			"filename",
+			"/>",
+			"\" alt=\"",
+			"<img src=\".",
 			"src=\"",
 			"href=\"",
 			",",
@@ -408,15 +416,15 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "/C/dev/pckujawa.github.io/_layouts/themed-default.html",
 					"settings":
 					{
-						"buffer_size": 1728,
+						"buffer_size": 3687,
 						"regions":
 						{
 						},
@@ -441,46 +449,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/C/dev/pckujawa.github.io/_layouts/project.html",
-					"settings":
-					{
-						"buffer_size": 908,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								272,
-								272
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "ui/index.md",
 					"settings":
 					{
-						"buffer_size": 5771,
+						"buffer_size": 6199,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								405,
+								405
 							]
 						],
 						"settings":
@@ -496,52 +476,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/C/dev/pckujawa.github.io/_layouts/default.html",
+					"buffer": 2,
+					"file": "ml-dec-tree/index.md",
 					"settings":
 					{
-						"buffer_size": 2163,
+						"buffer_size": 3150,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1592,
-								1592
+								138,
+								138
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 142.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/dev/pckujawa.github.io/_config.yml",
-					"settings":
-					{
-						"buffer_size": 148,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								82
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -550,10 +502,37 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
+					"file": "mm-cbir/index.md",
 					"settings":
 					{
-						"buffer_size": 180,
+						"buffer_size": 3829,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								266,
+								266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "net-dijkstra/index.md",
+					"settings":
+					{
+						"buffer_size": 3026,
 						"regions":
 						{
 						},
@@ -566,8 +545,33 @@
 						],
 						"settings":
 						{
-							"auto_name": "lo-fi-img/1-title-screen.png",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "sim-friction/index.md",
+					"settings":
+					{
+						"buffer_size": 3764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								441,
+								441
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -631,6 +635,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"index.md",
+				"portfolio/sim-friction/index.md"
+			],
+			[
+				"def",
+				"/C/dev/pckujawa.github.io/_layouts/default.html"
+			],
 			[
 				"_layout",
 				"pckujawa.github.io/_layouts/project.html"

@@ -5,7 +5,7 @@ summary:
     An Android tower-defense game created with user-centered design principles.
 course: Human-Computer Interaction, Game and Mobile App Development
 date: Spring 2012
-images:
+<!-- images:
 
 - title: Title screen sketch.
   filename: '/portfolio/ui/lo-fi-img/1-title-screen.png'
@@ -31,7 +31,7 @@ images:
 
 - title:    Lo-fi sketch
   filename: '/portfolio/ui/lo-fi-img/6-achievements-screen.png'
-  caption:  Achievements screen
+  caption:  Achievements screen -->
 
 ---
 
@@ -44,9 +44,13 @@ For HCI, we had a series of assignments involving iterative design, including cr
 
 * Functional and usability requirements, the output of which was an individual report ([my report](./ind-report-functional-usability-reqs.pdf)).
 
-* Preliminary design, which involved low-fidelity (lo-fi) prototyping, identifying users and the sytem qualities most important to them, determining the context of the system, and experience with design critiques (crits). The deliverable was a set of crude paper sketches of the application's screens as well as a report on the feedback it received during the critique. This was an individual assignment.
-
-<slideshow of my sketches in ./lo-fi />
+* Preliminary design, which involved low-fidelity (lo-fi) prototyping, identifying users and the sytem qualities most important to them, determining the context of the system, and experience with design critiques (crits). The deliverable was a set of crude paper sketches of the application's screens as well as a report on the feedback it received during the critique. This was an individual assignment; my sketches covered mockups for the
+<a class="cboxElement lo-fi-sketches" href="/portfolio/ui/lo-fi-img/1-title-screen.png" title="">title</a>, 
+<a class="cboxElement lo-fi-sketches" href="/portfolio/ui/lo-fi-img/2-new-game.png" title="">new game</a>, 
+<a class="cboxElement lo-fi-sketches" href="/portfolio/ui/lo-fi-img/3-map-in-game.png" title="">in-game map</a>, 
+<a class="cboxElement lo-fi-sketches" href="/portfolio/ui/lo-fi-img/4-tower-upgrades.png" title="">tower upgrades</a>, 
+<a class="cboxElement lo-fi-sketches" href="/portfolio/ui/lo-fi-img/5-options-screen.png" title="">options</a>, and
+<a class="cboxElement lo-fi-sketches" href="/portfolio/ui/lo-fi-img/6-achievements-screen.png" title="">achievements</a> screens.
 
 * Iterative design, in which we incorporated/addressed feedback from first crit, combined individual designs into a cohesive team design, and presented medium-fidelity (powerpoint) sketches of our game. As a team, we delivered a walkthrough of the system via powerpoint slides during the second crit session ([our report](./report-functional-feedback-walkthrough.pdf)).
 
