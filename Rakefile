@@ -22,3 +22,12 @@ desc 'Build the site'
 task :build => [:compile_css, :clobber] do
   sh 'jekyll build'
 end
+
+desc 'Install gems in Gemfile with bundle'
+task :default do
+  sh "bundle"
+  # sh "gem --version"
+  # sh "gem install bundler jekyll rdiscount sass"
+  # sh "mkdir -p _site"
+  sh "echo now run rake build"
+end

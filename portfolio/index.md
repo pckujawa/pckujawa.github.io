@@ -19,4 +19,8 @@ Selected projects completed during my Master's degree:
 </dl> -->
 
 ## Committee
-I am very thankful to my graduate portfolio advisor and our department chair, [Dr. Yolanda Reimer](http://www.cas.umt.edu/casweb/faculty/FacultyDetails.cfm?id=543). Thank you also to CS professor [Dr. Douglas Raiford](http://www.cs.umt.edu/~dougr) and [Dr. David Erickson](http://www.coehs.umt.edu/directory/people/erickson_david.php) from the Education Department for serving on my committee.
+I am very thankful to my graduate portfolio advisor and our department chair, [Dr. Yolanda Reimer][yolanda]. Thank you also to CS professor [Dr. Douglas Raiford][doug] and [Dr. David Erickson][dave] from the Education Department for serving on my committee.
+
+[yolanda]: http://www.cs.umt.edu/facultyAndStaff/faculty-details.php?id=543
+[doug]: http://www.cs.umt.edu/facultyAndStaff/faculty-details.php?id=1592
+[dave]: http://www.coehs.umt.edu/directory/people/erickson_david.php
